@@ -54,10 +54,11 @@ Response:
 
 ### ✅ POST /data
 
-```bash
-curl -X POST http://localhost:8080/data \
--H "Content-Type: application/json" \
--d '{"name":"devops"}'
+```
+Invoke-RestMethod -Uri http://localhost:8080/data `
+  -Method POST `
+  -Body '{"name":"devops","project":"test"}' `
+  -ContentType "application/json"
 ```
 
 Response:
